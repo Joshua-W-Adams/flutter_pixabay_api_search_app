@@ -63,7 +63,7 @@ class PixabaySearchBloc {
     query = query.toLowerCase();
 
     /// Check for search request cases
-    if (query.length > 3) {
+    if (query.length > 3 && query.length <= 100) {
       /// set current query
       _currentQuery = query;
 
